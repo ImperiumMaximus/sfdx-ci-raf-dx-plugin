@@ -1,7 +1,7 @@
 FROM telnext/telnext_image:v4
 
 RUN apt-get install -y yarn
-RUN npm install sfdx-cli --global
+RUN echo "7.75.1" && npm install sfdx-cli --global
 
 # clone and install raf-dx-plugin
 RUN echo "0.5.1" && git clone https://github.com/ImperiumMaximus/raf-dx-plugin.git
