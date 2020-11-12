@@ -8,4 +8,4 @@ RUN echo "0.5.1" && git clone https://github.com/ImperiumMaximus/raf-dx-plugin.g
 RUN cd raf-dx-plugin && yarn install
 RUN cd raf-dx-plugin && sfdx plugins:link
 
-RUN sfdx plugins:install @salesforce/sfdx-scanner
+RUN npm install -g @salesforce/sfdx-scanner
